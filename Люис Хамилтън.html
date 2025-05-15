@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Люис Хамилтън - Формула 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>* 
+nav {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #e10600;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e10600;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.4);
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f4d03f;
+}
+
+.bio ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.bio li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+.back-button-container {
+    margin: 20px;
+    text-align: left;
+}
+
+.back-button {
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    color: #e10600;
+    transform: translateX(-3px);
+}
+
+</style>
+<body>
+    <header>
+        <div class="back-button-container">
+            <button onclick="history.back()" class="back-button">← Назад</button>
+        </div>
+        
+        <h1>Люис Хамилтън</h1>
+        <p>Седемкратен световен шампион във Формула 1</p>
+
+        <nav>
+        <ul class="nav-menu">
+            <li><a href="file:///C:/website/Untitled-1.html">Начало</a></li>
+            <li><a href="file:///C:/website/about.html">За нас</a></li>
+            <li><a href="file:///C:/website/%D0%BE%D1%82%D0%B1%D0%BE%D1%82%D0%B8%202.html">Отбори</a></li>
+            <li><a href="file:///C:/website/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8.html">Пилоти</a></li>
+            <li><a href="file:///C:/website/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%82%D0%B0%D1%82%D0%B8.html">Резултати</a></li>
+            <li><a href="file:///C:/website/Contacts.html">Контакти</a></li>
+            <li><a href="file:///C:/website/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%20%D0%BC%D0%B0%D1%80%D1%82.html">Календар</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="data:image/jpeg;base64,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" alt="Lewis Hamilton">
+            <div class="bio">
+                <h2>Биография</h2>
+                <p>Люис Хамилтън е британски състезател от Формула 1, роден на 7 януари 1985 г. в Стивънидж, Великобритания. Той е един от най-успешните пилоти в историята на спорта, с 7 световни титли и над 100 победи в кариерата си.</p>
+                <p>Започва своята F1 кариера през 2007 г. с McLaren и печели първата си титла още през 2008 г. През 2013 г. преминава в Mercedes, където доминира през хибридната ера. През 2025 г. Хамилтън се присъединява към отбора на Ferrari.</p>
+                <ul>
+                    <li><strong>Националност:</strong> Великобритания</li>
+                    <li><strong>Роден:</strong> 7 януари 1985</li>
+                    <li><strong>Отбори:</strong> McLaren, Mercedes, Ferrari</li>
+                    <li><strong>Титли:</strong> 2008, 2014, 2015, 2017, 2018, 2019, 2020</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Формула 1 Биографии | Всички права спазени </p>
+    </footer>
+</body>
+</html>

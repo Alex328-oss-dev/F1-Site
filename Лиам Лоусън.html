@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лиам Лоусън - Формула 1 и Формула 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    nav {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+header {
+    background-color: blue; 
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blueviolet;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f4d03f;
+}
+
+.bio ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.bio li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+.back-button-container {
+    margin: 20px;
+    text-align: left;
+}
+
+.back-button {
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    color: #e10600;
+    transform: translateX(-3px);
+}
+
+</style>
+<body>
+    <header>
+        <div class="back-button-container">
+            <button onclick="history.back()" class="back-button">← Назад</button>
+        </div>
+        <h1>Лиам Лоусън</h1>
+        <p>Надеждата на Нова Зеландия и резервен пилот във Формула 1</p>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="file:///C:/website/Untitled-1.html">Начало</a></li>
+                <li><a href="file:///C:/website/about.html">За нас</a></li>
+                <li><a href="file:///C:/website/%D0%BE%D1%82%D0%B1%D0%BE%D1%82%D0%B8%202.html">Отбори</a></li>
+                <li><a href="file:///C:/website/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8.html">Пилоти</a></li>
+                <li><a href="file:///C:/website/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%82%D0%B0%D1%82%D0%B8.html">Резултати</a></li>
+                <li><a href="file:///C:/website/Contacts.html">Контакти</a></li>
+                <li><a href="file:///C:/website/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%20%D0%BC%D0%B0%D1%80%D1%82.html">Календар</a></li>
+              </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/fom-website/drivers/2025Drivers/lawson-racing-bulls" alt="Лиам Лоусън">
+            <div class="bio">
+                <h2>Биография</h2>
+                <p>Лиам Лоусън е млад новозеландски пилот, част от Red Bull Junior Team, който вече направи впечатляващо участие във Формула 1 като заместник на Даниел Рикардо в AlphaTauri. Изключително талантлив, бърз и концентриран, той е сериозен кандидат за пълно време място в F1.</p>
+                <ul>
+                    <li><strong>Дата на раждане:</strong> 11 февруари 2002 г.</li>
+                    <li><strong>Националност:</strong> новозеландец</li>
+                    <li><strong>Категория:</strong> Формула 1 (резервен пилот), бивш пилот във Формула 2 и Super Formula</li>
+                    <li><strong>Текущ отбор:</strong> Резервен пилот за Red Bull Racing и Visa Cash App RB</li>
+                    <li><strong>Постижения:</strong> Подиуми и победи във F2, заместник във F1 през 2023 г., 9-то място в дебюта си</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; F1 България.| Всички права запазени.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Календар – Юли</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header, footer {
+      background-color: #e10600;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #e10600;
+      color: white;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .nav-buttons a {
+      background-color: #e10600;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .nav-buttons a:hover {
+      background-color: #b30000;
+    }
+    .navbar {
+      background-color: #e10600;
+      padding: 15px 0;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 30px;
+    }
+    .nav-menu li {
+      position: relative;
+    }
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      display: block;
+    }
+    .nav-menu a:hover {
+      background-color: #b30000;
+      border-radius: 5px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .dropdown-content li a {
+      color: black;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content li a:hover {
+      background-color: #eee;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="Untitled-1.html">Начало</a></li>
+        <li><a href="about.html">За нас</a></li>
+        <li><a href="Contacts.html">Контакти</a></li>
+        <li><a href="отбори 2.html">Отбори</a></li>
+        <li><a href="Пилоти.html">Пилоти</a></li>
+        <li><a href="резултати.html">Резултати</a></li>
+        <li class="dropdown">
+          <a href="">Календар</a>
+          <ul class="dropdown-content">
+            <li><a href="календар март.html">Март</a></li>
+            <li><a href="календар април.html">Април</a></li>
+            <li><a href="календар-май.html">Май</a></li>
+            <li><a href="календар-юни.html">Юни</a></li>
+            <li><a href="календар-юли.html">Юли</a></li>
+            <li><a href="календар-август.html">Август</a></li>
+            <li><a href="календар-септември.html">Септември</a></li>
+            <li><a href="календар-октомври.html">Октомври</a></li>
+            <li><a href="календар-ноември.html">Ноември</a></li>
+            <li><a href="календар-декември.html">Декември</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <h1>Формула 1 – Календар: Юли 2025</h1>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Събитие</th>
+          <th>Местоположение</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6 юли</td>
+          <td>Гран При на Великобритания</td>
+          <td>Силвърстоун, Великобритания</td>
+        </tr>
+        <tr>
+          <td>20 юли</td>
+          <td>Гран При на Унгария</td>
+          <td>Хунгароринг, Будапеща</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="nav-buttons">
+      <a href="календар-юни.html">← Юни</a>
+      <a href="календар-август.html">→ Август</a>
+    </div>
+  </main>
+</body>
+</html>

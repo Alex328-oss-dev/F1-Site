@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 България</title>
+  <style>
+    :root {
+      --primary-color: #e10600;
+      --accent-color: #ffd700;
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* Навигация */
+    header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    nav {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #b30000;
+}
+
+
+
+
+
+
+    /* Hero секция */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1606813902784-041e3f66a1c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #eee;
+    }
+
+    /* Секции */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary-color);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .teams-list, .calendar-list {
+      list-style: none;
+      font-size: 1.1rem;
+      padding-left: 1.2rem;
+      line-height: 2rem;
+    }
+
+    .teams-list li::before, .calendar-list li::before {
+      content: "▶ ";
+      color: var(--primary-color);
+    }
+
+    /* Футър */
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content {
+        padding: 1.5rem;
+      }
+    }
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="file:///C:/website/Untitled-1.html">Начало</a></li>
+        <li><a href="file:///C:/website/about.html">За нас</a></li>
+        <li><a href="file:///C:/website/Contacts.html">Контакти</a></li>
+        <li><a href="file:///C:/website/%D0%BE%D1%82%D0%B1%D0%BE%D1%82%D0%B8%202.html">Отбори</a></li>
+        <li><a href="file:///C:/website/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8.html">Пилоти</a></li>
+        <li><a href="file:///C:/website/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%82%D0%B0%D1%82%D0%B8.html">Резултати</a></li>
+        <li class="dropdown">
+          <a href="file:///C:/website/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%20%D0%BC%D0%B0%D1%80%D1%82.html">Календар</a>
+          <ul class="dropdown-content">
+            <li><a href="file:///C:/website/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%20%D0%BC%D0%B0%D1%80%D1%82.html">Март</a></li>
+            <li><a href="file:///C:/website/%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%20%D0%B0%D0%BF%D1%80%D0%B8%D0%BB.html">Април</a></li>
+            <li><a href="календар-май.html">Май</a></li>
+            <li><a href="календар-юни.html">Юни</a></li>
+            <li><a href="календар-юли.html">Юли</a></li>
+            <li><a href="календар-август.html">Август</a></li>
+            <li><a href="календар-септември.html">Септември</a></li>
+            <li><a href="календар-октомври.html">Октомври</a></li>
+            <li><a href="календар-ноември.html">Ноември</a></li>
+            <li><a href="календар-декември.html">Декември</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Хедър секция -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Добре дошли във Формула 1 България</h1>
+      <p>Всичко за най-бързия спорт на света – новини, отбори, пилоти и състезания.</p>
+    </div>
+  </section>
+
+  <!-- Новини -->
+  <section class="section" id="news">
+    <h2>Последни новини</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ферари с нов пакет</h3>
+        <p>Нов аеродинамичен пакет за подобрена скорост на правите.</p>
+      </div>
+      <div class="card">
+        <h3>Ред Бул не спира</h3>
+        <p>Макс Верстапен печели трето поредно Гран при тази година.</p>
+      </div>
+      <div class="card">
+        <h3>Юки Тсунода продължава</h3>
+        <p>Пилотът удължи договора си с Red Bull до 2026 г.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отбори -->
+  <section class="section" id="teams">
+    <h2>F1 Отбори 2025</h2>
+    <ul class="teams-list">
+      <li>Ferrari</li>
+      <li>Red Bull Racing</li>
+      <li>Mercedes-AMG</li>
+      <li>McLaren</li>
+      <li>Aston Martin</li>
+      <li>Още можете да намерите в страницата ''Отбори''</li>
+    </ul>
+  </section>
+
+  <!-- Пилоти -->
+  <section class="section" id="drivers">
+    <h2>Избрани пилоти</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Макс Верстапен</h3>
+        <p>Световен шампион, лидер на Red Bull.</p>
+      </div>
+      <div class="card">
+        <h3>Шарл Льоклер</h3>
+        <p>Бърз и амбициозен, водещ пилот на Ferrari.</p>
+      </div>
+      <div class="card">
+        <h3>Джордж Ръсел</h3>
+        <p>Младо попълнение на Mercedes с голям потенциал.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="calendar">
+    <h2>Състезателен календар 2025</h2>
+    <ul class="calendar-list">
+      <li>🇧🇭 Бахрейн – 11 Април</li>
+      <li>🇸🇦 Саудитска Арабия – 18 Април</li>
+      <li>🇦🇺 Австралия – 14 Март</li>
+

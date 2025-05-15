@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календар Формула 1 – Сезон 2025</title>
+    <link rel="stylesheet" href="calendar.css">
+    <style>/* Основни стилове за страница */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #e10600;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        /* Навигационно меню */
+        nav {
+            margin-top: 15px;
+        }
+        
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu li {
+            display: inline;
+        }
+        
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .nav-menu a:hover {
+            background-color: #b30000;
+            transform: scale(1.1);
+        }
+        
+        /* Секция с календар */
+        .calendar {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #e10600;
+        }
+        
+        /* Стилове за таблицата */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #e10600;
+            color: white;
+            font-size: 1.1em;
+        }
+        
+        td {
+            background-color: #f9f9f9;
+            font-size: 1em;
+            font-weight: normal;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        
+        tr:hover {
+            background-color: #f1c1c1;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Анимации */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        table {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        /* Стилове за футър */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        /* Респонсив дизайн */
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            table {
+                font-size: 14px;
+            }
+        
+            th, td {
+                padding: 8px;
+            }
+        }
+        img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 500px;
+}
+nav {
+    margin-top: 15px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #b30000;
+}
+        
+        </style>
+</head>
+
+<body>
+    <header>
+       
+        <h1>Календар на Формула 1 – Сезон 2025</h1>
+        <p>24 състезания по целия свят</p>
+        <nav class="navbar">
+            <div class="logo">F1 България</div>
+            <nav>
+              <ul class="nav-menu">
+                  <li><a href="file:///C:/website/Untitled-1.html">Начало</a></li>
+                  <li><a href="file:///C:/website/about.html">За нас</a></li>
+                  <li><a href="file:///C:/website/Contacts.html">Контакти</a></li>
+                  <li><a href="file:///C:/website/%D0%BE%D1%82%D0%B1%D0%BE%D1%82%D0%B8%202.html">Отбори</a></li>
+                  <li><a href="file:///C:/website/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8.html">Пилоти</a></li>
+                  <li><a href="file:///C:/website/%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%82%D0%B0%D1%82%D0%B8.html">Резултати</a></li>
+                  <li><a href="file:///C:/website/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80.html">Календар</a></li>
+                </ul>
+              </nav>
+    </header>
+
+    <section class="races">
+        <!-- Гран При Австралия -->
+        <article class="race">
+            <h2>Гран При на Австралия</h2>
+            <p><strong>Дати:</strong> 14–16 март</p>
+            <p><strong>Място:</strong> Мелбърн</p>
+            <p><strong>Описание:</strong> Състезанието открива сезона на Формула 1 в Австралия, като традиционно привлича голямо количество фенове.</p>
+            <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Australia_Circuit.png" alt="Гран При на Австралия 2025">
+      
+        
+      
+        </article>
+
+
+        <!-- Гран При на Китай -->
+        <article class="race">
+            <h2>Гран При на Китай</h2>
+            <p><strong>Дати:</strong> 21–23 март</p>
+            <p><strong>Място:</strong> Шанхай</p>
+            <p><strong>Описание:</strong> Китайското състезание предлага бързи и технически предизвикателни условия за пилотите.</p>
+            <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/China_Circuit.png" alt="Гран При на Китай 2025">
+        </article>
+
+        <!-- Гран При на Япония -->
+        <article class="race">
+            <h2>Гран При на Япония</h2>
+            <p><strong>Дати:</strong> 4–6 април</p>
+            <p><strong>Място:</strong> Сузука</p>
+            <p><strong>Описание:</strong> Сузука е известна със своето уникално оформление и е любимо място за много пилоти.</p>
+            <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Japan_Circuit.png" alt="Гран При на Япония 2025">
+        </article>
+
+        <!-- Гран При на Бахрейн -->
+        <article class="race">
+            <h2>Гран При на Бахрейн</h2>
+            <p><strong>Дати:</strong> 11–13 април</p>
+            <p><strong>Място:</strong> Сахир</p>
+            <p><strong>Описание:</strong> Бахрейн предлага нощно състезание с високи температури и предизвикателни условия.</p>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit" alt="Гран При на Бахрейн 2025">
+        </article>
+
+        <!-- Гран При на Саудитска Арабия -->
+        <article class="race">
+            <h2>Гран При на Саудитска Арабия</h2>
+            <p><strong>Дати:</strong> 18–20 април</p>
+            <p><strong>Място:</strong> Джеда</p>
+            <p><strong>Описание:</strong> Джеда е бърза улична писта, известна със своите тесни участъци и висока скорост.</p>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Saudi_Arabia_Circuit" alt="Гран При на Саудитска Арабия 2025">
+        </article>
+
+        <!-- Гран При на САЩ (Маями) -->
+        <article class="race">
+            <h2>Гран При на САЩ (Маями)</h2>
+            <p><strong>Дати:</strong> 2–4 май</p>
+            <p><strong>Място:</strong> Маями</p>
+            <p><strong>Описание:</strong> Маями предлага модерна писта с уникален облик и атмосфера.</p>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Miami_Circuit" alt="Гран При на САЩ (Маями) 2025">
+        </article>      
+
+        <!-- Гран При на Италия (Имола) -->
+        <article class="race">
+            <h2>Гран При на Италия (Имола)</h2>
+            <p><strong>Дати:</strong> 16–18 май</p>
+            <p><strong>Място:</strong> Имола</p>
+            <p><strong>Описание:</strong> Имола е известна със своите технически завои и историческо значение в спорта.</p>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Emilia_Romagna_Circuit" alt="Гран При на Италия (Имола) 2025">
+        </article>
+
+        <!-- Гран При на Монако -->
+        <article class="race">
+            <h2>Гран При на Монако</h2>
+            <p><strong>Дати:</strong> 23–25 май</p>
+            <p><strong>Място:</strong> Монте Карло</p>
+            <p><strong>Описание:</strong> Монако е най-луксозното и престижно състезание в календара на Формула 1.</p>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Monaco_Circuit" alt="Гран При на Монако 2025">
+        </article>
+
+        <!-- Гран При на Испания -->
+        <article class="race">
+            <h2>Гран При на Испания</h2>
+            <p><strong>Дати:</strong> 30 май – 1 юни</p>
+            <p><strong>Място:</strong> Барселона</p>
+            <p><strong>Описание:</strong> Барселона предлага разнообразие от завои и е традиционно място за тестове.</p>
+            <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png" alt="Гран При на Испания 2025">
+        </article>
+
+        <!-- Гран При на Канада -->
+        <article class="race">
+            <h2>Гран При на Канада</h2>
+            <p><strong>Дати:</strong> 13–15 юни</p>
+            <p><strong>Място:</strong>Монтреал</p>
+            <p><strong>Описание</strong>Една от най-интересните писти за наблюдаване!</p>
+            <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Canada_Circuit.png" alt="Гран При на Канада 2025">
+
+    <!-- Гран При на Австрия -->
+<article class="race">
+    <h2>Гран При на Австрия</h2>
+    <p><strong>Дати:</strong> 27–29 юни</p>
+    <p><strong>Място:</strong> Шпилберг</p>
+    <p><strong>Описание:</strong> Пистата „Ред Бул Ринг“ предлага красива природа и бързи участъци.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Austria_Circuit.png" alt="Гран При на Австрия 2025">
+</article>
+
+<!-- Гран При на Великобритания -->
+<article class="race">
+    <h2>Гран При на Великобритания</h2>
+    <p><strong>Дати:</strong> 4–6 юли</p>
+    <p><strong>Място:</strong> Силвърстоун</p>
+    <p><strong>Описание:</strong> Историческа писта, считана за родното място на Формула 1.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Great_Britain_Circuit.png" alt="Гран При на Великобритания 2025">
+</article>
+
+<!-- Гран При на Белгия -->
+<article class="race">
+    <h2>Гран При на Белгия</h2>
+    <p><strong>Дати:</strong> 25–27 юли</p>
+    <p><strong>Място:</strong> Спа-Франкоршамп</p>
+    <p><strong>Описание:</strong> Една от най-емблематичните и предизвикателни писти в календара.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Belgium_Circuit.png" alt="Гран При на Белгия 2025">
+</article>
+
+<!-- Гран При на Унгария -->
+<article class="race">
+    <h2>Гран При на Унгария</h2>
+    <p><strong>Дати:</strong> 1–3 август</p>
+    <p><strong>Място:</strong> Будапеща (Хунгароринг)</p>
+    <p><strong>Описание:</strong> Бавна, технична писта, изискваща максимална концентрация.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Hungary_Circuit.png" alt="Гран При на Унгария 2025">
+</article>
+
+<!-- Гран При на Нидерландия -->
+<article class="race">
+    <h2>Гран При на Нидерландия</h2>
+    <p><strong>Дати:</strong> 29–31 август</p>
+    <p><strong>Място:</strong> Зандворт</p>
+    <p><strong>Описание:</strong> Писта с уникални наклони, дом на феновете на Макс Верстапен.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Netherlands_Circuit.png" alt="Гран При на Нидерландия 2025">
+</article>
+
+<!-- Гран При на Италия (Монца) -->
+<article class="race">
+    <h2>Гран При на Италия (Монца)</h2>
+    <p><strong>Дати:</strong> 5–7 септември</p>
+    <p><strong>Място:</strong> Монца</p>
+    <p><strong>Описание:</strong> Най-бързата писта в календара, дом на Тифозите.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Italy_Circuit.png" alt="Гран При на Италия (Монца) 2025">
+</article>
+
+<!-- Гран При на Азербайджан -->
+<article class="race">
+    <h2>Гран При на Азербайджан</h2>
+    <p><strong>Дати:</strong> 19–21 септември</p>
+    <p><strong>Място:</strong> Баку</p>
+    <p><strong>Описание:</strong> Улична писта със смесица от тесни завои и дълги прави.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Baku_Circuit.png" alt="Гран При на Азербайджан 2025">
+</article>
+
+<!-- Гран При на Сингапур -->
+<article class="race">
+    <h2>Гран При на Сингапур</h2>
+    <p><strong>Дати:</strong> 3–5 октомври</p>
+    <p><strong>Място:</strong> Сингапур</p>
+    <p><strong>Описание:</strong> Известна като първата нощна Гран При в историята на Формула 1.</p>
+    <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Singapore_Circuit" alt="Гран При на Сингапур 2025">
+</article>
+<!-- Гран При на САЩ (Остин) -->
+<article class="race">
+    <h2>Гран При на САЩ (Остин)</h2>
+    <p><strong>Дати:</strong> 17–19 октомври</p>
+    <p><strong>Място:</strong> Остин, Тексас</p>
+    <p><strong>Описание:</strong> Пистата „Circuit of the Americas“ е известна със своята изкачваща първа крива и американски стил.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/USA_Circuit.png" alt="Гран При на САЩ в Остин 2025">
+</article>
+
+<!-- Гран При на Мексико -->
+<article class="race">
+    <h2>Гран При на Мексико</h2>
+    <p><strong>Дати:</strong> 24–26 октомври</p>
+    <p><strong>Място:</strong> Мексико Сити</p>
+    <p><strong>Описание:</strong> Атмосферно Гран При на голяма надморска височина, пълно с мексикански страст и музика.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Mexico_Circuit.png" alt="Гран При на Мексико 2025">
+</article>
+
+<!-- Гран При на Бразилия -->
+<article class="race">
+    <h2>Гран При на Бразилия</h2>
+    <p><strong>Дати:</strong> 7–9 ноември</p>
+    <p><strong>Място:</strong> Сао Пауло (Интерлагос)</p>
+    <p><strong>Описание:</strong> Легендарна писта с дъждовна история и страстна публика.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Brazil_Circuit.png" alt="Гран При на Бразилия 2025">
+</article>
+
+<!-- Гран При на САЩ (Лас Вегас) -->
+<article class="race">
+    <h2>Гран При на САЩ (Лас Вегас)</h2>
+    <p><strong>Дати:</strong> 20–22 ноември</p>
+    <p><strong>Място:</strong> Лас Вегас</p>
+    <p><strong>Описание:</strong> Шоуто на нощта в светлината на неона – новата класика на F1.</p>
+    <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Las_Vegas_Circuit" alt="Гран При на Лас Вегас 2025">
+</article>
+
+<!-- Гран При на Катар -->
+<article class="race">
+    <h2>Гран При на Катар</h2>
+    <p><strong>Дати:</strong> 28–30 ноември</p>
+    <p><strong>Място:</strong> Лусаил</p>
+    <p><strong>Описание:</strong> Нощно състезание в пустинята с модерни условия.</p>
+    <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Qatar_Circuit" alt="Гран При на Катар 2025">
+</article>
+
+<!-- Финал: Гран При на Абу Даби -->
+<article class="race">
+    <h2>Гран При на Абу Даби</h2>
+    <p><strong>Дати:</strong> 5–7 декември</p>
+    <p><strong>Място:</strong> Yas Marina Circuit</p>
+    <p><strong>Описание:</strong> Финалът на сезона – лукс, светлини и драма до последната обиколка.</p>
+    <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Abu_Dhabi_Circuit.png" alt="Гран При на Абу Даби 2025">
+</article>
+
+
+ 
